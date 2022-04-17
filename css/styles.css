@@ -61,6 +61,7 @@ nav .link:hover:after{
     height: 100vh;
     z-index: -1;
     overflow: hidden;
+    object-fit: cover;
 }
 .hero{
     height: 100vh;
