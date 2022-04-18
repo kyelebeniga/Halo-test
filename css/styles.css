@@ -234,11 +234,12 @@ nav .link:hover:after{
     width: 100%;
 }
 .content{
+    overflow: hidden;
     height: 100%;
     width: 100%;
     position: relative;
 }
-.text{
+.content .text{
     text-align: center;
     position: absolute;
     top: 50%;
@@ -246,7 +247,7 @@ nav .link:hover:after{
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
-.text h1{
+.content .text h1{
     font-size: 60px;
     color: white;
 }
@@ -260,6 +261,10 @@ nav .link:hover:after{
     height: 0;
     z-index: 2;
     color: white;
+}
+.prev-arrow:hover,
+.next-arrow:hover{
+    cursor: pointer;
 }
 .prev-arrow{
     left: 20px;
@@ -328,4 +333,52 @@ input:focus{
 .career-buttons p{
     padding-top: 14px;
     font-weight: 600;
+}
+/*-----Second Slide-----*/
+.secondSlide{
+    height: 100vh;
+    width: 100%;
+}
+.second-content{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.second-content .filters{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.filters .search-bar{
+    margin: 0 auto;
+}
+.dropdown-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 60px;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 10px;
+}
+select:focus{
+    outline: none;
+}
+.dropdown-container select{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+.dropdown-container > *{
+    flex-basis: 100%;
 }
