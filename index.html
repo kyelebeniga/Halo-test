@@ -3,6 +3,9 @@
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/ee576bec08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
     <header>
@@ -79,6 +82,65 @@
             </div>
         </div>
     </section>
+
+    <section class="career">
+        <div class="carousel">
+            <div class="firstSlide">
+                <div class="content">
+                    <div class="text">
+                        <h1>FIND YOUR FUTURE</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec.
+                            In ornare quam viverra orci sagittis eu. Vivamus arcu felis bibendum ut tristique et</p>
+                        <div class="search-bar">
+                            <input type="text" class="search" placeholder="SEARCH CAREERS">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="career-buttons">
+                            <div>
+                                <p>VIEW ALL OPENINGS</p>
+                            </div>
+                            <div>
+                                <p>LIFE ON ZETA HALO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/career-bg.png">
+                </div>
+            </div>
+            <div class="secondSlide">
+                <img src="img/stars.png" class="content">
+            </div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $('.carousel').slick({ 
+            arrows: true,
+            dots: false,
+            infinite: false,
+            prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
+            nextArrow: '<button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>'
+        });
+        $('.prev-arrow').hide();
+        $('.carousel').on('afterChange', function(){
+            console.log($('.carousel').slick('slickCurrentSlide'));
+            var currentSlide = $('.carousel').slick('slickCurrentSlide');
+        if(currentSlide==0){
+            $('.prev-arrow').hide();
+            $('.next-arrow').show();
+        }
+        if(currentSlide==1){
+            $('.prev-arrow').show();
+            $('.next-arrow').hide();
+        }
+        });
+    </script>
 </body>
 </html>

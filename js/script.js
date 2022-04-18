@@ -1,3 +1,5 @@
+//Animates the counters in the hero section
+
 let counters = document.querySelectorAll("#found");
 let speed = 5;
 

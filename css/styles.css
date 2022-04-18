@@ -208,15 +208,124 @@ nav .link:hover:after{
     height: 100%;
     object-fit: cover;
 }
-.col h1, p{
+.col h1{
+    text-align: center;
+    padding: 30px;
+    transition: 0.5s ease-in;
+    font-size: 46px;
+    font-weight: 600;
+}
+.col p{
+    transform: translateY(40px);
     text-align: center;
     padding: 30px;
     transition: 0.5s ease-in;
 }
-.col p{
-    transform: translateY(40px);
+
+/*-----Career-----*/
+.career{
+    height: 100vh;
+    overflow: hidden;
 }
-.col h1{
-    font-size: 46px;
+/*-----Carousel-----*/
+.carousel{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.text h1{
+    font-size: 60px;
+    color: white;
+}
+.prev-arrow,
+.next-arrow{
+    border: none;
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    color: white;
+}
+.prev-arrow{
+    left: 20px;
+}
+.next-arrow{
+    right: 50px;
+}
+/*-----Search Bar-----*/
+input:focus{
+    outline: none;
+}
+.search-bar{
+    height: 60px;
+    width: 400px;
+    margin: 200px auto 0px auto;
+    border: 2px solid white;
+    background-color: black;
+}
+.search{
+    border-radius: 0;
+    border-style: none;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.search::placeholder{
+    color: white;
+    font-weight: 600;
+}
+.search-bar button {
+    border-style: none;
+    float: right;
+    height: 100%;
+    width: 20%;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+/*-----Career Buttons-----*/
+.career-buttons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    width: 400px;
+    height: 60px;
+    gap: 12px;
+}
+.career-buttons > *{
+    height: 100%;
+    flex-basis: 100%;
+    border: 2px solid white;
+    text-align: center;
+    background-color: black;
+}
+.career-buttons:hover > *{
+    cursor: pointer;
+}
+.career-buttons p{
+    padding-top: 14px;
     font-weight: 600;
 }
