@@ -19,6 +19,11 @@ header{
     align-items: center;
     justify-content: flex-start;
     z-index: 2;
+    transition: 0.4s;
+}
+header.sticky{
+    background: rgba(0, 0, 0, 0.877);
+    padding: 10px 100px;
 }
 .logo{
     margin: 0px 30px;
