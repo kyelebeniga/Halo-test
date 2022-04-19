@@ -538,6 +538,9 @@ select:focus{
     border-bottom: 1px solid white;
     flex-basis: 100%;
 }
+.article-list:hover > *{
+    cursor: pointer;
+}
 .article-list img{
     margin-right: 20px;
     height: 170px;
