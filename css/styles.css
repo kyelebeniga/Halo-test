@@ -473,3 +473,113 @@ select:focus{
 .featured-article button:hover{
     color: black;
 }
+.article-container{
+    background-color: #201c1c;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.sort-container{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 40px;
+}
+.sort ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    width: 20%;
+    margin: 10px 0;
+    font-weight: 500;
+    float: left;
+}
+.sort ul a{
+    padding: 0px 20px;
+}
+.sort-search{
+    width: 15%;
+    height: 30px;
+    float: right;
+    margin: 5px;
+    border: 1px solid white;
+}
+.sort-search input{
+    height: 100%;
+    width: 80%;
+    background: none;
+    border: none;
+    padding: 0px 10px;
+    color: white;
+}
+.sort-search button{
+    height: 100%;
+    width: 15%;
+    background: none;
+    border: none;
+    color: white;
+}
+.sort-search button:hover{
+    cursor: pointer;
+}
+.article-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+}
+.article-list > *{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    flex-basis: 100%;
+}
+.article-list img{
+    margin-right: 20px;
+    height: 170px;
+}
+.article-header{
+    width: 70%;
+    height: 170px;
+}
+.head > *{
+    padding: 3px;
+}
+.head h1{
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+.head h2{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+}
+.head p{
+    font-weight: 200;
+    color: grey;
+}
+.article-date{
+    color: grey;
+}
+
+/*-----Contacts-----*/
+.contact{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #201c1c;
+}
+.contact h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+}
