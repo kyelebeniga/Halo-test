@@ -97,10 +97,10 @@
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
                         <div class="career-buttons">
-                            <div>
+                            <div class="openings">
                                 <p>VIEW ALL OPENINGS</p>
                             </div>
-                            <div>
+                            <div class="life">
                                 <p>LIFE ON ZETA HALO</p>
                             </div>
                         </div>
@@ -177,34 +177,31 @@
             </div>
         </div>
     </section>
-    <script src="js/script.js"></script>
+    
+    <section class="news">
+        <div class="news-carousel">
+            <div class="featured">
+                <div class="featured-content">
+                    <div class="featured-article">
+                        <p>December 06, 2321</p>
+                        <h1>SWORD OF TERRA<br>PLANETARY <br>TEST-1</h1>
+                        <button class="view-article">VIEW ARTICLE</button>
+                    </div>
+                    <img src="img/news-bg.png">
+                </div>
+            </div>
+            <div class="articles">
+
+            </div>
+        </div>
+    </section>
+    
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $('.carousel').slick({ 
-            arrows: true,
-            dots: false,
-            infinite: false,
-            prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
-            nextArrow: '<button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>'
-        });
-        $('.prev-arrow').hide();
-        $('.carousel').on('afterChange', function(){
-            console.log($('.carousel').slick('slickCurrentSlide'));
-            var currentSlide = $('.carousel').slick('slickCurrentSlide');
-        if(currentSlide==0){
-            $('.prev-arrow').hide();
-            $('.next-arrow').show();
-        }
-        if(currentSlide==1){
-            $('.prev-arrow').show();
-            $('.next-arrow').hide();
-        }
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
