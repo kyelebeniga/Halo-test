@@ -155,7 +155,7 @@ nav .link:hover:after{
 }
 #found{
     position: absolute;
-    transform: translateX(110px);
+    transform: translateX(160px);
 }
 #activated{
     position: absolute;
