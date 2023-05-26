@@ -6,9 +6,9 @@
     box-sizing: border-box;
     font-family: "Poppins", "sans-serif";
 }
-
-    /* TABLE OF CONTENTS */
-
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     color: white;
